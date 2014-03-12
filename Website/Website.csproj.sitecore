@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <Site Server="SampleSearch" UserName="sitecore\admin" IsRemoteSitecore="True" />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="layouts\TagSearching\Search.ascx" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+      <Item DatabaseName="master">{7AA0A902-BC3F-4E17-9041-0DB3048A3F9F}</Item>
+    </File>
+  </ItemGroup>
+</Project>

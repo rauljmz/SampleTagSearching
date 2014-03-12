@@ -1,0 +1,97 @@
+<project site="SampleSearch" format="Zip Package">
+  <Metadata>
+    <metadata>
+      <PackageName>SampleTagSearchingContent</PackageName>
+      <Author>RJ</Author>
+      <Version>1.0</Version>
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme>This package only includes items</Readme>
+      <Publisher />
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/content/Home/{110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Home/Train in blue and green/{394969E5-85ED-4C2F-98BA-3C6E0565C69A}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Home/Car in black/{6853081C-4C96-4022-A941-E9F0B5491532}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Home/Bike in green and yellow/{C40EA60D-737C-4011-941B-EE3469302CA8}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Global/{51E300AA-6536-41C4-AE8F-C577F0216A12}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Global/Tags/{AC8F7637-37E9-4A64-9D59-83738867A477}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Global/Tags/Black/{54AD482D-02AF-4564-A358-F9935FCD7810}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Global/Tags/Blue/{AC8C993D-955F-4890-82F4-3A7B931A5E80}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Global/Tags/Greens/{A6D18BA3-BAA3-4302-990B-03EAC6F2A661}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Global/Tags/Red/{FC80A1E9-AFD2-4AF5-8E6A-ABFCDF787740}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Global/Tags/White/{6C7F2937-A045-4CAC-9C31-3A264A1A32F6}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Global/Tags/Yellow/{97BBDEF8-DF4D-4440-8155-F8CF54F9B323}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Sublayouts/SampleTagSearching/Search/{7AA0A902-BC3F-4E17-9041-0DB3048A3F9F}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Sublayouts/SampleTagSearching/{494CE73F-3260-4D82-A024-E7B79C49EFD1}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/User Defined/Sample Content/{F0E42F6D-6F55-411C-9072-428EBF9138A8}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/User Defined/Tag/{0DD823CC-BE87-42C7-B93D-505C795188A9}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/User Defined/Sample Content/Information/{F009EBB2-A3EE-45BD-AC16-40DBD006E00E}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/User Defined/Sample Content/__Standard Values/{A0EDE6C3-4516-4238-BC4C-218905383004}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/User Defined/Sample Content/Taxonomy/{EE49E133-B543-4866-81DF-1C825025F780}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/User Defined/Sample Content/Information/Title/{72421595-866B-4E61-8B43-F4149E0548A7}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/User Defined/Sample Content/Information/Text/{3BC15CB8-8664-4ADA-A1F7-B35799373A09}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/User Defined/Sample Content/Information/Image/{BE0A25CF-7B2F-4618-AFBB-6CDE56A4BFFD}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/User Defined/Sample Content/Taxonomy/Tagging/{5F0B95EC-7109-48E2-BB94-493B7A00A60A}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/User Defined/Tag/Data/{01DDB3B2-1219-4F1F-81E5-D5F5B9F92844}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/User Defined/Tag/__Standard Values/{A3CF490A-E1C0-4530-9601-813DE16A3593}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/User Defined/Tag/Data/Name/{DE9FC91D-9492-497E-9BA6-C27A42684F64}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Items</Name>
+    </xitems>
+    <xfiles>
+      <Entries />
+      <Converter>
+        <FileToEntryConverter>
+          <Root />
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Files</Name>
+    </xfiles>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>

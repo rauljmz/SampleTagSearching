@@ -1,0 +1,51 @@
+----item----
+version: 1
+id: {AC8C993D-955F-4890-82F4-3A7B931A5E80}
+database: master
+path: /sitecore/content/Global/Tags/Blue
+parent: {AC8F7637-37E9-4A64-9D59-83738867A477}
+name: Blue
+master: {00000000-0000-0000-0000-000000000000}
+template: {0DD823CC-BE87-42C7-B93D-505C795188A9}
+templatekey: Tag
+
+----version----
+language: en
+version: 1
+revision: f53580f7-e95f-4a28-9d43-283a3e327008
+
+----field----
+field: {DE9FC91D-9492-497E-9BA6-C27A42684F64}
+name: Name
+key: name
+content-length: 4
+
+Blue
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140312T104243
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f53580f7-e95f-4a28-9d43-283a3e327008
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140312T104243:635302177637866429
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
