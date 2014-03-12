@@ -15,7 +15,9 @@ namespace SampleTagSearching.ContentType
         [IndexField("_path")]
         IEnumerable<ID> Paths { get; set; }
 
-        [IndexField("_group"), TypeConverter(typeof(IndexFieldIDValueConverter))]
+        [IndexField("_group")]
         ID ItemId { get; set; }
+
+
     }
 }

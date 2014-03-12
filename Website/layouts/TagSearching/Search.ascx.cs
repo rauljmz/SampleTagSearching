@@ -8,10 +8,10 @@
     using SampleTagSearching.SearchService;
     using System.Linq;
 
-    
+
     public partial class Search : System.Web.UI.UserControl
     {
-        private  TagSearchService<SampleContent> _tagSearchService;
+        private TagSearchService<SampleContent> _tagSearchService;
 
         private void Page_Load(object sender, EventArgs e)
         {
@@ -23,10 +23,15 @@
             return _tagSearchService.GetTags();
         }
 
-       
+
         protected void btnSearch_Click(object sender, EventArgs e)
         {
-            var results = _tagSearchService.ContentWithTag(Sitecore.Data.ID.Parse(ddSearch.SelectedValue));
+            DoSearch();
+        }
+
+        private void DoSearch(params string[] facets)
+        {
+            var results = _tagSearchService.ContentWithTag(Sitecore.Data.ID.Parse(ddSearch.SelectedValue), facets);
 
             if (results.Results.Any())
             {
@@ -38,6 +43,18 @@
             }
             rptSearchResults.DataSource = results.Results;
             rptSearchResults.DataBind();
+
+            rptFacets.DataSource = results.Facets;
+            rptFacets.DataBind();
+        }
+
+        protected void lkFacet_Click(object sender, EventArgs e)
+        {
+            var linkbutton = sender as LinkButton;
+            if (linkbutton == null) return;
+            
+            DoSearch(linkbutton.Text);
+            
         }
     }
 }

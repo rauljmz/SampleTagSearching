@@ -51,11 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComputedFields\SectionComputedField.cs" />
     <Compile Include="ContentType\CustomSearchResults.cs" />
+    <Compile Include="ContentType\Facet.cs" />
     <Compile Include="ContentType\ISitecoreResult.cs" />
     <Compile Include="ContentType\ITagging.cs" />
     <Compile Include="ContentType\SampleContent.cs" />
-    <Compile Include="ContentType\SitecoreSearchResult.cs" />
     <Compile Include="ContentType\Tag.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SearchService\TagSearchService.cs" />

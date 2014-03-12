@@ -18,7 +18,7 @@ namespace SampleTagSearching.SearchService
             _indexname = string.Format("sitecore_{0}_index",databasename);
         }
 
-        public CustomSearchResults<T> ContentWithTag(ID tag)
+        public CustomSearchResults<T> ContentWithTag(ID tag, params string[] facets)
         {
             var index = ContentSearchManager.GetIndex(_indexname);
 
@@ -27,8 +27,13 @@ namespace SampleTagSearching.SearchService
                 var results = context.GetQueryable<T>()
                     .Where(sc => sc.Tagging.Contains(tag))
                     .Where(sc => sc.Paths.Contains(ID.Parse("{110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}"))) // only content underneath HOME item. Discard Standard Values
-                    .GetResults();
-                return new CustomSearchResults<T>(results);
+                    .FacetOn(sc=> sc.Section);
+                foreach (var facet in facets)
+                {
+                    results = results.Filter(sc => sc.Section == facet);
+                }
+                    
+                return new CustomSearchResults<T>(results.GetResults()).ToggleFacets(facets);
             }            
         }
 

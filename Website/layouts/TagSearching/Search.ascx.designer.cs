@@ -40,6 +40,15 @@ namespace Website.layouts.TagSearching {
         protected global::System.Web.UI.WebControls.Repeater rptSearchResults;
         
         /// <summary>
+        /// rptFacets control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rptFacets;
+        
+        /// <summary>
         /// litTotal control.
         /// </summary>
         /// <remarks>

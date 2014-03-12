@@ -15,6 +15,7 @@ namespace SampleTagSearching.ContentType
     {
         public string Title { get; set; }
         public string Text { get; set; }
-        public IEnumerable<ID> Tagging { get; set; }        
+        public IEnumerable<ID> Tagging { get; set; }
+        public string Section { get; set; }
     }
 }
