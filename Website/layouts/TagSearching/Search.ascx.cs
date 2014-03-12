@@ -50,6 +50,8 @@
 
         protected void lkFacet_Click(object sender, EventArgs e)
         {
+            //only filters on the facet that has just been clicked. 
+            //this would need to be improved so it remembers which facets are currently turned on
             var linkbutton = sender as LinkButton;
             if (linkbutton == null) return;
             

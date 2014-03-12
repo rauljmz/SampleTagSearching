@@ -10,12 +10,12 @@ namespace SampleTagSearching.ComputedFields
 {
     public class SectionComputedField : IComputedIndexField
     {
-        public string TemplateKey { get; set; }
+        public string TemplateKey { get { return "sample content"; } }
 
         public object ComputeFieldValue(Sitecore.ContentSearch.IIndexable indexable)
         {
             var sitecoreIndexable = indexable as SitecoreIndexableItem;
-            if (sitecoreIndexable == null && !sitecoreIndexable.Item.TemplateName.Equals(TemplateKey,StringComparison.InvariantCultureIgnoreCase)) return null;
+            if (sitecoreIndexable == null || !sitecoreIndexable.Item.TemplateName.Equals(TemplateKey,StringComparison.InvariantCultureIgnoreCase)) return null;
                      
             return sitecoreIndexable.Item.Axes.SelectSingleItem("./ancestor-or-self::*[@@templatekey='folder']").Name + " content";
         }
